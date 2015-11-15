@@ -1,4 +1,4 @@
-/* -------------------------------- 
+/* --------------------------------
 
 Primary style
 
@@ -36,7 +36,7 @@ h1, h2 {
   font-weight: bold;
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
 Modules - reusable parts of our design
 
@@ -54,9 +54,9 @@ Modules - reusable parts of our design
   clear: both;
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
-Main components 
+Main components
 
 -------------------------------- */
 header {
@@ -157,6 +157,11 @@ header h1 {
 .cd-timeline-img.cd-picture {
   background: #75ce66;
 }
+
+.cd-timeline-img.cd-bad-driver {
+  background: #bfb611;
+}
+
 .cd-timeline-img.cd-movie {
   background: #c03b44;
 }
