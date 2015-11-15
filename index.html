@@ -21,6 +21,7 @@
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <!-- Custom styles -->
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/on-off.css" rel="stylesheet">
 
   </head>
 
@@ -42,7 +43,15 @@
         </ul>
         <!-- Rigiht links -->
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#about">On/Off</a></li>
+          <li>
+            <div class="onoffswitch">
+              <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+              <label class="onoffswitch-label" for="myonoffswitch">
+                <span class="onoffswitch-inner"></span>
+                <span class="onoffswitch-switch"></span>
+              </label>
+            </div>
+          </li>
         </ul>
       </div>
     </nav>
