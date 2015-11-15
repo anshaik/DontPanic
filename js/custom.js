@@ -1,15 +1,24 @@
-jQuery(document).ready(function($){
 	var timelineBlocks = $('.cd-timeline-block');
+  var demoStart = false;
 
 	//hide timeline blocks which are outside the viewport
 	hideAllBlocks(timelineBlocks);
-  startDemo();
-
+  
 	function hideAllBlocks(blocks, offset) {
     blocks.hide();
 	}
 
-	function startDemo() {
+  function startDemo() {
+    if(!demoStart){
+      demo1();
+      demoStart = true;
+    }else{
+      hideAllBlocks(timelineBlocks);
+      demoStart = false;
+    }
+  }
+
+	function demo1() {
     $('#demo1').show();
     setTimeout(demo2, 2000) //wait ten seconds before continuing
 	}
@@ -43,4 +52,6 @@ jQuery(document).ready(function($){
     $('#demo7').show();
 	}
 
-}); // end doc ready
+  function engineON(){
+     $('#EngineStatus')[0].innerHTML = "RUNNING"
+  }

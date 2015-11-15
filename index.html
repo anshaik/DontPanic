@@ -21,39 +21,50 @@
     <!-- Custom styles -->
     <link href="css/style.css" rel="stylesheet">
     <link href="css/on-off.css" rel="stylesheet">
+    <link href="css/dont-panic.css" rel="stylesheet">
 
   </head>
 
   <body>
 
     <nav class="navbar navbar-default" role="navigation">
-      <div class="navbar-header">
+      <div class="navbar-header col-sm-3 col-xs-3">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
       </div>
-      <a class="navbar-brand" href="#">Don't Panic</a>
-      <div class="navbar-collapse collapse">
-        <!-- // Left links -->
-        <ul class="nav navbar-nav navbar-left">
-          <li><a href="#about"><i class="fa fa-bars"></i></a></li>
-        </ul>
-        <!-- Rigiht links -->
-        <ul class="nav navbar-nav navbar-right">
-          <li>
-            <div class="onoffswitch">
-              <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
-              <label class="onoffswitch-label" for="myonoffswitch">
-                <span class="onoffswitch-inner"></span>
-                <span class="onoffswitch-switch"></span>
-              </label>
-            </div>
-          </li>
-        </ul>
+      <div class="col-sm-6 col-xs-6">
+        <a class="navbar-brand" href="#">Don't Panic</a>
+      </div>
+      <div class="col-sm-3 col-xs-3">
+
       </div>
     </nav>
+    <div class="row monitorRow" >
+
+      <div class="col-md-3 col-sm-3 col-xs-3 text-center">
+        <h1 class="headerSmall">ENGINE</h1>
+        <h2 id="EngineStatus" class="bold">OFF</h2>
+      </div>
+      <div class="col-md-6 col-sm-6 col-xs-6 text-center">
+        <!-- Rigiht links -->
+        <h1 class="headerSmall">Monitoring</h1>
+        <div class="onoffswitch center-inner-div">
+          <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" onclick="startStopTimer();startDemo();engineON();">
+          <label class="onoffswitch-label" for="myonoffswitch">
+            <span class="onoffswitch-inner"></span>
+            <span class="onoffswitch-switch"></span>
+          </label>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-3 col-xs-3 text-center ">
+          <h1 class="headerSmall" >TIME</h1>
+          <h1 class="bold"><time>00:00:00</time></h1>
+      </div>
+
+    </div >
 
 
       <!-- Timeline section -->
@@ -155,6 +166,7 @@
     <script type="text/javascript" charset="utf-8" src="plugins/gmaps.js"></script>
     <script type="text/javascript" charset="utf-8" src="https://djaqzxyxnyyiy.cloudfront.net/mojio-js.js"></script>
     <script type="text/javascript" charset="utf-8" src="js/custom.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/timer.js"></script>
     <!-- <script type="text/javascript" charset="utf-8" src="js/timeline.js"></script> -->
     <script src="js/bootstrap.min.js"></script>
   </body>

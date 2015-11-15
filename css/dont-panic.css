@@ -1,0 +1,32 @@
+.navbar-default {
+    background-color: black;
+}
+
+.center-inner-div{
+    margin: 0 auto;
+}
+
+.navbar-toggle{
+	float: left;
+}
+
+.bold{
+	font-weight: bolder;
+    color: black;
+}
+
+.monitorRow{
+	background-color: white;
+}
+
+.row{
+	padding-top: 15px;
+}
+
+.navbar{
+	margin-bottom: 0 !important;
+}
+
+.headerSmall{
+    font-size: smaller;
+}
