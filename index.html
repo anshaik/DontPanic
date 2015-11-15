@@ -14,7 +14,10 @@
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <!-- Bootstrap core CSS -->
+    <!-- Timeline -->
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/time_style.css" rel="stylesheet">
+    <!-- Custom styles -->
     <link href="css/style.css" rel="stylesheet">
 
   </head>
@@ -44,10 +47,37 @@
 
     <div class="container">
 
-      <div>
-        <h1>Don't Panic</h1>
-        <p>just don't, man.</p>
-      </div>
+      <!-- Timeline section -->
+
+      <!-- First timeline block -->
+      <section id="cd-timeline">
+        <div class="cd-timeline-block">
+          <div class="cd-timeline-img">
+            <img src="img/cd-icon-picture.svg" alt="Picture">
+          </div> <!-- cd-timeline-img -->
+          <div class="cd-timeline-content bounce-in">
+            <h2>Don't Panic</h2>
+            <p>Just don't, man.</p>
+            <a href="#0" class="cd-read-more">Details</a>
+            <span class="cd-date">Jan 18</span>
+          </div> <!-- cd-timeline-content -->
+        </div> <!-- cd-timeline-block -->
+
+        <!-- Second timeline block -->
+        <section id="cd-timeline">
+          <div class="cd-timeline-block">
+            <div class="cd-timeline-img">
+              <img src="img/cd-icon-picture.svg" alt="Picture">
+            </div> <!-- cd-timeline-img -->
+            <div class="cd-timeline-content bounce-in">
+              <h2>Your car is dying.</h2>
+              <p>Totally, man.</p>
+              <a href="#0" class="cd-read-more">Details</a>
+              <span class="cd-date">Jan 14</span>
+            </div> <!-- cd-timeline-content -->
+          </div> <!-- cd-timeline-block -->
+
+    </section>
 
     </div><!-- /.container -->
 
@@ -58,6 +88,7 @@
     <script type="text/javascript" charset="utf-8" src="plugins/gmaps.js"></script>
     <script type="text/javascript" charset="utf-8" src="https://djaqzxyxnyyiy.cloudfront.net/mojio-js.js"></script>
     <script type="text/javascript" charset="utf-8" src="js/custom.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/timeline.js"></script>
     <script src="js/bootstrap.min.js"></script>
   </body>
 </html>
