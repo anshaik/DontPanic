@@ -5,6 +5,11 @@
     text-align: center;
     margin: auto;
 }
+
+.dont-panic-head {
+  color: white;
+}
+
 .bad-driver {
   color: #bfb611;
 }
