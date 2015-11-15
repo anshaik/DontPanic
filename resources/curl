@@ -1,0 +1,1 @@
+curl -H "MojioApiToken:c9fe1d7e-761c-4be5-b876-7d9cf2eb297b" -X GET "http://api.moj.io/v1/Vehicles"
