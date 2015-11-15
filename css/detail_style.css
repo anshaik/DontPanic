@@ -1,0 +1,35 @@
+.details {
+  text-align: center;
+  font-family: Helvetica, sans-serif;
+}
+
+.fa-angle-left {
+  color: white;
+}
+
+#head {
+  color: white;
+}
+
+.details-nav {
+  background-color: #bfb611;
+}
+
+.date {
+  text-transform: uppercase;
+  color: #777777;
+  font-size: 75%;
+}
+
+.sent-message {
+  font-style: italic;
+  font-size: 150%;
+}
+
+#map {
+  background-image: url("../img/map-image.png");
+  height: auto;
+  margin: 0 auto;
+  width: 100%;
+  position: relative; 
+}
