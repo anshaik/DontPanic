@@ -5,7 +5,10 @@
     text-align: center;
     margin: auto;
 }
-
-h2 .bad-driver {
+.bad-driver {
   color: #bfb611;
+}
+
+.good-driver {
+  color: #29aa1b;
 }
