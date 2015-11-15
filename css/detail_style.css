@@ -26,10 +26,9 @@
   font-size: 150%;
 }
 
-#map {
-  background-image: url("../img/map-image.png");
-  height: auto;
-  margin: 0 auto;
-  width: 100%;
-  position: relative; 
+#map {  height: 300px; }
+
+.bold{
+  font-weight: bolder;
+    color: black;
 }

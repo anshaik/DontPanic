@@ -24,48 +24,84 @@
   <body class="details">
 
     <nav class="navbar navbar-default details-nav" role="navigation">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-        </button>
-      </div>
-      <a class="navbar-brand" href="#"><p id="head">Hard Braking Details</p></a>
-      <div class="navbar-collapse collapse">
+      <div class="col-md-3 col-sm-3 col-xs-3 ">
         <!-- // Left links -->
         <ul class="nav navbar-nav navbar-left">
           <li><a href="index.html"><i class="fa fa-angle-left"></i></a></li>
         </ul>
       </div>
+      <div class="col-md-6 col-sm-6 col-xs-6 text-center">
+        <a class="navbar-brand" href="#"><p id="head">Hard Braking Details</p></a>
+      </div>
+      <div class="col-md-3 col-sm-3 col-xs-3 text-center">
+
+      </div>
+      
     </nav>
 
     <div class="container">
       <!-- message row  -->
       <div class="row">
-        <p class="date">TODAY, 4:15 PM</p>
-        <p class="sent-message">"My fault, please don't be mad, I'll slow down"</p>
+        <p class="date col-md-12 col-sm-12 col-xs-12">TODAY, 4:15 PM</p>
+        <p class="sent-message col-md-12 col-sm-12 col-xs-12">"My fault, please don't be mad, I'll slow down"</p>
       </div>
       <!-- map row  -->
-      <div class="row" id="map"></div>
+      <div class="row">
+        <div class="col-xs-1"></div>
+        <div class="col-xs-10" id="map">
+          
+        </div>
+        <div class="col-xs-1"></div>
+      </div>
       <!-- total miles and time  -->
       <div class="row">
-        <div class=".col-sm-6 .col-md-6 .col-lg-6">
+        <div class="col-sm-6 col-md-6 col-lg-6 col-xs-6">
           <p>Total miles</p>
-          <p>2.34</p>
+          <p class="bold">2.34</p>
         </div>
-        <div class=".col-sm-6 .col-md-6 .col-lg-6">
+        <div class="col-sm-6 col-md-6 col-lg-6 col-xs-6">
           <p>Total time</p>
-          <p>00:23:34</p>
+          <p class="bold">00:23:34</p>
         </div>
       </div>
       <!-- warning button  -->
       <div class="row">
-        <p><a class="btn btn-lg btn-danger" role="button" onclick="sendAlert();">Send Warning Tone</a></p>
+        <div class="col-xs-1">
+        </div>
+        <div class="col-xs-10">
+        <p><a class="btn btn-lg btn-danger" role="button" onclick="sendAlert();">Send Warning Tone</a></p>          
+        </div>
+        <div class="col-xs-1">
+        </div>
       </div>
 
     </div>
 
     <!-- javascript -->
+    <script type="text/javascript">
+
+      var map;
+      function initMap() {
+        var myLatLng = {lat: 34.0399244, lng: -118.26172};
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 17,
+          center: myLatLng
+        });
+
+         var marker = new google.maps.Marker({
+            position: myLatLng,
+            map: map,
+            title: 'Hello World!'
+          });
+      }
+
+    </script>
     <script type="text/javascript" charset="utf-8" src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script type="text/javascript" charset="utf-8" src="bower_components/signalr/jquery.signalR-2.0.2.min.js"></script><script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=true"></script>
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC7QsMiP5yZHkjiZaj0-Q71OcGxHSqO5E4&callback=initMap">
+    </script>
+
     <script type="text/javascript" charset="utf-8" src="https://djaqzxyxnyyiy.cloudfront.net/mojio-js.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/details.js"></script>
