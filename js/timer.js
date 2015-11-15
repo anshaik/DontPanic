@@ -1,4 +1,4 @@
-var h1 = document.getElementsByTagName('h1')[0],
+var h1 = document.getElementById('timer'),
     start = document.getElementById('start'),
     stop = document.getElementById('stop'),
     clear = document.getElementById('clear'),
